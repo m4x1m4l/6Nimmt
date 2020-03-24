@@ -14,6 +14,9 @@ class SechsNimmtGame
 
 public:
 	SechsNimmtGame();
+	std::string toString();
+	void shuffle();
+	void deal();
 private:
 	std::array<Karte, DECK_SIZE>deck;
 	std::array<Karte, PLAYER_SIZE>player1;
