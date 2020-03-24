@@ -9,6 +9,7 @@ int main() {
 	SechsNimmtGame s;
 	cout << s.toString();
 	s.shuffle();
+	s.deal();
 	cout << "\n\n" << s.toString();
 	
 	return 0;

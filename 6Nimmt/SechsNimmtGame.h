@@ -2,12 +2,12 @@
 #include "Karte.h"
 #include <cstddef>
 #include <array>
+#include <vector>
 
 
 
 
-static const std::size_t DECK_SIZE{ 105 };
-static const std::size_t PLAYER_SIZE{ 10 };
+static const std::size_t DECK_SIZE{ 104 };
 
 class SechsNimmtGame
 {
@@ -19,8 +19,10 @@ public:
 	void deal();
 private:
 	std::array<Karte, DECK_SIZE>deck;
-	std::array<Karte, PLAYER_SIZE>player1;
-	std::array <Karte, PLAYER_SIZE > player2;
-	std::array<Karte, PLAYER_SIZE>player3;
+	std::vector<Karte>player1;
+	std::vector<Karte>player2;
+	std::vector<Karte>player3;
+	std::vector<Karte>player4;
+
 };
 
