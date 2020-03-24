@@ -6,6 +6,7 @@ private:
 	unsigned int hornochsen;
 	unsigned int nummer;
 
+
 public:
 	Karte(int nr);
 	Karte();
@@ -13,5 +14,8 @@ public:
 	int getHornochsen()const;
 	void setHornochsen();
 	int getNummer()const;
+
+	bool operator<(const Karte&) const;
+
 };
 

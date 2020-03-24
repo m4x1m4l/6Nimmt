@@ -51,3 +51,16 @@ int Karte::getNummer() const
 {
 	return nummer;
 }
+
+bool Karte::operator<(const Karte& k) const
+{
+	if (nummer < k.getNummer())
+	{
+		return true;
+	}
+	else if (nummer > k.getNummer())
+	{
+		return false;
+	}
+	
+}

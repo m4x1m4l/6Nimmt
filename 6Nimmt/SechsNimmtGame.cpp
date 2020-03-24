@@ -34,6 +34,11 @@ void SechsNimmtGame::deal()
 		player4.push_back(deck[i]);
 		i++;	
 	}
+	//Spieler decks sortieren:
+	sort(player1.begin(), player1.end());
+	sort(player2.begin(), player2.end());
+	sort(player3.begin(), player3.end());
+	sort(player4.begin(), player4.end());
 }
 
 std::string SechsNimmtGame::toString()
