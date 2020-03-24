@@ -138,7 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Karte.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SechsNimmtGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Karte.h" />
+    <ClInclude Include="SechsNimmtGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
